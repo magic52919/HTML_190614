@@ -16,6 +16,16 @@
   <title>Bootstrap</title>
 
   <!-- 如何選取到基數列和偶數列的元素 -->
+  <style>
+    div[class^="col-"]:nth-child(odd){
+      background-color: aqua;
+      height: 300px;
+    }
+    div[class^="col-"]:nth-child(even){
+      background-color:crimson;
+      height: 300px;
+    }
+  </style>
 </head>
 
 <body>
@@ -78,7 +88,7 @@
   <!-- 導覽列下的說明，<main>是語意標籤，表示網頁的主要內容；http://shoelace.io；可輔助排版畫面 -->
   <main>
     <!-- .container 固定寬度 或 .container-fluid 滿版  -->
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <!-- 請參考 調整版面測試.png -->
         <div class="col-sm-6 col-md-4 col-lg-2">A</div>
@@ -90,6 +100,7 @@
       </div>
     </div>
   </main>
+  <!-- w3c css select  -->
 
 
   <!-- Optional JavaScript -->
